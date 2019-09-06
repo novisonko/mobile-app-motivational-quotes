@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Spring-Mobile Apps</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	   
+		 <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+ 	
+		<!-- UI framework -->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+		<script src="lib/js/jquery.min.js"></script>
+
+		<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+		
+		<link rel="stylesheet" href="vendor/font-awesome/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nativedroid2.css">
+		
+		<!-- custom style -->		
+		
+        <link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/quiz.css">
+		<link rel="stylesheet" href="css/chat.css">
+		
+		<!-- init -->	
+        <script src="js/init-app.js"></script>
+      	<script src="js/util.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/style.js"></script>
+		<!-- app view widgets -->
+		
+		<script src="view/widgets/header.js"></script>
+		<script src="view/widgets/footer.js"></script>
+		<script src="view/widgets/mainmenu.js"></script>
+		<script src="view/widgets/login_form.js"></script>
+		<script src="view/widgets/register_form.js"></script>
+		<script src="view/widgets/reset_pwd_form.js"></script>
+		<script src="view/widgets/change_credentials_form.js"></script>
+		<script src="view/widgets/prompt_quiz.js"></script>
+		
+		<!-- app process -->
+		
+		<script src="js/process_content.js"></script>
+		<script src="js/ajax.js"></script>
+		
+		<script src="js/process_templates.js"></script>	
+		<script src="js/processlink.js"></script>
+		<script src="js/redirectlink.js"></script>
+		<script src="js/onpagechange.js"></script>	
+		
+		<script src="js/process_genusername.js"></script>
+		<script src="js/process_change_credentials.js"></script>
+		<script src="js/process_register.js"></script>
+		<script src="js/process_reset_pwd.js"></script>
+		<script src="js/processlogin.js"></script>
+		
+		<script src="js/history.js"></script>
+		<script src="js/chat.js"></script>
+		<script src="js/saved_messages.js"></script>
+		<script src="js/chat_message_notify.js"></script>
+		<script src="js/quiz.js"></script>
+				
+		<script src="js/start.js"></script>
+		
+		<script src="model/content_0.js"></script>
+		<script src="model/content_1.js"></script>
+		<script src="model/content_2.js"></script>
+		<script src="model/content_3.js"></script>
+		<script src="model/content_4.js"></script>
+		<script src="model/content_5.js"></script>
+		<script src="model/content_6.js"></script>
+		<script src="model/content_7.js"></script>
+		<script src="model/content_10.js"></script>
+		<script src="model/content_11.js"></script>
+		<script src="model/content_12.js"></script>
+		<script src="model/content_13.js"></script>
+		
+		<script src="model/quizcontent_1.js"></script>
+		<script src="model/quizcontent_2.js"></script>
+		<script src="model/quizcontent_3.js"></script>
+		<script src="model/quizcontent_4.js"></script>
+		<script src="model/quizcontent_5.js"></script>
+		<script src="model/quizcontent_6.js"></script>
+		<script src="model/quizcontent_7.js"></script>
+		
+		<script src="js/app.js"></script>
+		
+		 <!--cordova.js script -->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+    </head>
+
+<body>     
+	
+<div id="media-query-bridge" style="display:none;"></div>
+
+<div id="index" class="title-is-logo" data-role="page">
+
+<div data-role="content" class="main notFree">
+
+	<div class="page-banner">
+	<div class="free" data-var="free">
+	</div>
+	<div class="page-free" data-var="description">
+	</div>
+	</div>
+	
+		<div class="cards pagemenu">
+			<div class="nd2-card card-a tmpl page_{{toPageNum}} locked">
+				<div class="card-title has-supporting-text">
+					<h3 class="card-primary-title">
+					<a href="#page_{{toPageNum}}" class="content-link locked" data-context="page_{{toPageNum}}">
+					{{category}}
+					</a>
+					</h3>
+				</div>
+
+				<div class="card-supporting-text has-title">
+					<a href="#page_{{toPageNum}}" class="content-link locked" data-context="page_{{toPageNum}}">
+					{{description}}
+					</a>
+				</div>
+			</div>
+		</div>
+	
+	</div><!-- /content -->
+	
+</div><!-- /page -->
+ 
+</body>
+
+</html>

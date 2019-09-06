@@ -1,0 +1,13 @@
+plugins/
+intelxdk*
+LICENSE.md
+*.xdk
+*.xdke
+www/xdk/
+www/vendor/
+www/css/
+www/jqm/
+www/lib/
+www/profile/
+www/images/
+.jscodehints
